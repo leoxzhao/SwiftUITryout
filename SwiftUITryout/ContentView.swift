@@ -22,12 +22,12 @@ struct ContentView: View {
         NavigationView {
             VStack {
             Button(action: {
-                self.currentUser = "Leo1"
+                self.currentUser = "Leo\(Int.random(in: 1...4))"
             }) {
                 Text("Clicky")
             }
             List(users) { user in
-                UserCell(user: user, isActive: self.$currentUser)
+                UserCell(user: user, isActive: self.currentUser == user.firstName)
             }
             }.navigationBarTitle(Text("Tutors"))
 
@@ -43,14 +43,14 @@ struct ContentView_Previews: PreviewProvider {
 
 struct UserCell: View {
     let user: User
-    @Binding var isActive: String?
+    let isActive: Bool
     
     var body: some View {
         NavigationLink(destination: Text(user.firstName)) {
             Image(systemName: "photo")
             HStack {
                 Text(user.firstName)
-                    .foregroundColor(self.isActive == user.firstName ? .red : .black)
+                    .foregroundColor(self.isActive ? .red : .black)
                 Text(user.lastName)
             }
         }
