@@ -9,14 +9,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    var users: [User] = []
+    var users: [User] = testData()
     
     var body: some View {
-        List(users) { user in
-            HStack {
-                Text(user.firstName)
-                Text(user.lastName)
+        NavigationView {
+            List(users) { user in
+                UserCell(user: user)
             }
+            .navigationBarTitle(Text("Tutors"))
         }
     }
 }
@@ -24,5 +24,18 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct UserCell: View {
+    let user: User
+    var body: some View {
+        NavigationLink(destination: Text(user.firstName)) {
+            Image(systemName: "photo")
+            HStack {
+                Text(user.firstName)
+                Text(user.lastName)
+            }
+        }
     }
 }

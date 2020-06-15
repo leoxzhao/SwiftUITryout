@@ -16,3 +16,14 @@ struct User: Identifiable {
     let firstName: String
     let lastName: String
 }
+
+func testData() -> [User] {
+    return [
+        User(firstName: "Leo", lastName: "Z"),
+        User(firstName: "Leo1", lastName: "Z"),
+        User(firstName: "Leo2", lastName: "Z"),
+        User(firstName: "Leo3", lastName: "Z"),
+        User(firstName: "Leo4", lastName: "Z")
+    ]
+}
+
