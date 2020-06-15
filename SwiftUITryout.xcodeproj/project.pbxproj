@@ -16,6 +16,7 @@
 		D4A009DC2497C00A0006881F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A009DA2497C00A0006881F /* LaunchScreen.storyboard */; };
 		D4A009E72497C00A0006881F /* SwiftUITryoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A009E62497C00A0006881F /* SwiftUITryoutTests.swift */; };
 		D4A009F22497C00A0006881F /* SwiftUITryoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A009F12497C00A0006881F /* SwiftUITryoutUITests.swift */; };
+		D4A00A002497C3690006881F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A009FF2497C3690006881F /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D4A009ED2497C00A0006881F /* SwiftUITryoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUITryoutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A009F12497C00A0006881F /* SwiftUITryoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITryoutUITests.swift; sourceTree = "<group>"; };
 		D4A009F32497C00A0006881F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4A009FF2497C3690006881F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				D4A009DD2497C00A0006881F /* Info.plist */,
 				D4A009D02497C0090006881F /* SwiftUITryout.xcdatamodeld */,
 				D4A009D72497C00A0006881F /* Preview Content */,
+				D4A009FF2497C3690006881F /* User.swift */,
 			);
 			path = SwiftUITryout;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				D4A009D22497C0090006881F /* SwiftUITryout.xcdatamodeld in Sources */,
 				D4A009CD2497C0090006881F /* AppDelegate.swift in Sources */,
 				D4A009D42497C0090006881F /* ContentView.swift in Sources */,
+				D4A00A002497C3690006881F /* User.swift in Sources */,
 				D4A009CF2497C0090006881F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

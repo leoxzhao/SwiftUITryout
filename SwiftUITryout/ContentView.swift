@@ -9,8 +9,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    var users: [User] = []
+    
     var body: some View {
-        Text("Hello, World!")
+        List(users) { user in
+            HStack {
+                Text(user.firstName)
+                Text(user.lastName)
+            }
+        }
     }
 }
 
