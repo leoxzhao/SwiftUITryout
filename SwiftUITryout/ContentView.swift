@@ -11,12 +11,26 @@ import SwiftUI
 struct ContentView: View {
     var users: [User] = testData()
     
+    // You should only access a state property from inside the view’s body,
+    // or from methods called by it. For this reason,
+    // declare your state properties as private, to prevent clients of
+    // your view from accessing it.
+    // It is safe to mutate state properties from any thread.
+    @State private var currentUser: String? = "Leo"
+    
     var body: some View {
         NavigationView {
-            List(users) { user in
-                UserCell(user: user)
+            VStack {
+            Button(action: {
+                self.currentUser = "Leo1"
+            }) {
+                Text("Clicky")
             }
-            .navigationBarTitle(Text("Tutors"))
+            List(users) { user in
+                UserCell(user: user, isActive: self.$currentUser)
+            }
+            }.navigationBarTitle(Text("Tutors"))
+
         }
     }
 }
@@ -29,11 +43,14 @@ struct ContentView_Previews: PreviewProvider {
 
 struct UserCell: View {
     let user: User
+    @Binding var isActive: String?
+    
     var body: some View {
         NavigationLink(destination: Text(user.firstName)) {
             Image(systemName: "photo")
             HStack {
                 Text(user.firstName)
+                    .foregroundColor(self.isActive == user.firstName ? .red : .black)
                 Text(user.lastName)
             }
         }
