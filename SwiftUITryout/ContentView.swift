@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    var users: [User] = testData()
+    @State var users: [User] = testData()
     
     // You should only access a state property from inside the view’s body,
     // or from methods called by it. For this reason,
@@ -28,6 +28,12 @@ struct ContentView: View {
                 }
                 NavigationLink(destination: TextViewExample()) {
                     Text("Text View")
+                }
+                NavigationLink(destination: GesturesView()) {
+                    Text("Gestures")
+                }
+                NavigationLink(destination: TableViewController(users: self.$users)) {
+                    Text("TableViewController")
                 }
                 List(users) { user in
                     UserCell(user: user, isActive: self.currentUser == user.firstName)

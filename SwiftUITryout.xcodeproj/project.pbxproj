@@ -19,6 +19,10 @@
 		D4A00A002497C3690006881F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A009FF2497C3690006881F /* User.swift */; };
 		D4A00A03249A55240006881F /* TextViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A00A02249A55240006881F /* TextViewExample.swift */; };
 		D4A00A05249A60B30006881F /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A00A04249A60B30006881F /* TextView.swift */; };
+		D4A00A07249A75140006881F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A00A06249A75140006881F /* TableViewController.swift */; };
+		D4A00A09249A75D50006881F /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A00A08249A75D50006881F /* UsersTableViewController.swift */; };
+		D4A00A0B249A91040006881F /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A00A0A249A91040006881F /* UserProfileView.swift */; };
+		D4A00A0D249AC1F80006881F /* GesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A00A0C249AC1F80006881F /* GesturesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		D4A00A0124990B330006881F /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		D4A00A02249A55240006881F /* TextViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewExample.swift; sourceTree = "<group>"; };
 		D4A00A04249A60B30006881F /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		D4A00A06249A75140006881F /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		D4A00A08249A75D50006881F /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		D4A00A0A249A91040006881F /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		D4A00A0C249AC1F80006881F /* GesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +128,10 @@
 				D4A009FF2497C3690006881F /* User.swift */,
 				D4A00A02249A55240006881F /* TextViewExample.swift */,
 				D4A00A04249A60B30006881F /* TextView.swift */,
+				D4A00A06249A75140006881F /* TableViewController.swift */,
+				D4A00A08249A75D50006881F /* UsersTableViewController.swift */,
+				D4A00A0A249A91040006881F /* UserProfileView.swift */,
+				D4A00A0C249AC1F80006881F /* GesturesView.swift */,
 			);
 			path = SwiftUITryout;
 			sourceTree = "<group>";
@@ -283,11 +295,15 @@
 			files = (
 				D4A009D22497C0090006881F /* SwiftUITryout.xcdatamodeld in Sources */,
 				D4A009CD2497C0090006881F /* AppDelegate.swift in Sources */,
+				D4A00A09249A75D50006881F /* UsersTableViewController.swift in Sources */,
 				D4A00A03249A55240006881F /* TextViewExample.swift in Sources */,
+				D4A00A07249A75140006881F /* TableViewController.swift in Sources */,
+				D4A00A0B249A91040006881F /* UserProfileView.swift in Sources */,
 				D4A00A05249A60B30006881F /* TextView.swift in Sources */,
 				D4A009D42497C0090006881F /* ContentView.swift in Sources */,
 				D4A00A002497C3690006881F /* User.swift in Sources */,
 				D4A009CF2497C0090006881F /* SceneDelegate.swift in Sources */,
+				D4A00A0D249AC1F80006881F /* GesturesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
