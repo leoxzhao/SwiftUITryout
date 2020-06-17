@@ -18,12 +18,6 @@ struct User: Identifiable {
 }
 
 func testData() -> [User] {
-    return [
-        User(firstName: "Leo", lastName: "Z"),
-        User(firstName: "Leo1", lastName: "Z"),
-        User(firstName: "Leo2", lastName: "Z"),
-        User(firstName: "Leo3", lastName: "Z"),
-        User(firstName: "Leo4", lastName: "Z")
-    ]
+    return (0...20).map { User(firstName: "Leo\($0)", lastName: "Z") }
 }
 

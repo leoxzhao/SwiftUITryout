@@ -21,15 +21,18 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-            Button(action: {
-                self.currentUser = "Leo\(Int.random(in: 1...4))"
-            }) {
-                Text("Clicky")
-            }
-            List(users) { user in
-                UserCell(user: user, isActive: self.currentUser == user.firstName)
-            }
-            }.navigationBarTitle(Text("Tutors"))
+                Button(action: {
+                    self.currentUser = "Leo\(Int.random(in: 0...10))"
+                }) {
+                    Text("Hightlight")
+                }
+                NavigationLink(destination: TextViewExample()) {
+                    Text("Text View")
+                }
+                List(users) { user in
+                    UserCell(user: user, isActive: self.currentUser == user.firstName)
+                }
+            }.navigationBarTitle(Text("Users"))
 
         }
     }
@@ -54,5 +57,6 @@ struct UserCell: View {
                 Text(user.lastName)
             }
         }
+        .background(self.isActive ? Rectangle().foregroundColor(.gray) : nil)
     }
 }

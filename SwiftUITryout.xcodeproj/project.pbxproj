@@ -17,6 +17,8 @@
 		D4A009E72497C00A0006881F /* SwiftUITryoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A009E62497C00A0006881F /* SwiftUITryoutTests.swift */; };
 		D4A009F22497C00A0006881F /* SwiftUITryoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A009F12497C00A0006881F /* SwiftUITryoutUITests.swift */; };
 		D4A00A002497C3690006881F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A009FF2497C3690006881F /* User.swift */; };
+		D4A00A03249A55240006881F /* TextViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A00A02249A55240006881F /* TextViewExample.swift */; };
+		D4A00A05249A60B30006881F /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A00A04249A60B30006881F /* TextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		D4A009F12497C00A0006881F /* SwiftUITryoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITryoutUITests.swift; sourceTree = "<group>"; };
 		D4A009F32497C00A0006881F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4A009FF2497C3690006881F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D4A00A0124990B330006881F /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		D4A00A02249A55240006881F /* TextViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewExample.swift; sourceTree = "<group>"; };
+		D4A00A04249A60B30006881F /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +88,7 @@
 		D4A009C02497C0090006881F = {
 			isa = PBXGroup;
 			children = (
+				D4A00A0124990B330006881F /* Readme.md */,
 				D4A009CB2497C0090006881F /* SwiftUITryout */,
 				D4A009E52497C00A0006881F /* SwiftUITryoutTests */,
 				D4A009F02497C00A0006881F /* SwiftUITryoutUITests */,
@@ -112,6 +118,8 @@
 				D4A009D02497C0090006881F /* SwiftUITryout.xcdatamodeld */,
 				D4A009D72497C00A0006881F /* Preview Content */,
 				D4A009FF2497C3690006881F /* User.swift */,
+				D4A00A02249A55240006881F /* TextViewExample.swift */,
+				D4A00A04249A60B30006881F /* TextView.swift */,
 			);
 			path = SwiftUITryout;
 			sourceTree = "<group>";
@@ -275,6 +283,8 @@
 			files = (
 				D4A009D22497C0090006881F /* SwiftUITryout.xcdatamodeld in Sources */,
 				D4A009CD2497C0090006881F /* AppDelegate.swift in Sources */,
+				D4A00A03249A55240006881F /* TextViewExample.swift in Sources */,
+				D4A00A05249A60B30006881F /* TextView.swift in Sources */,
 				D4A009D42497C0090006881F /* ContentView.swift in Sources */,
 				D4A00A002497C3690006881F /* User.swift in Sources */,
 				D4A009CF2497C0090006881F /* SceneDelegate.swift in Sources */,
