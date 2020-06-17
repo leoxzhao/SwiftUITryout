@@ -10,14 +10,31 @@ import SwiftUI
 import UIKit
 
 struct TextView: UIViewRepresentable {
-    typealias UIViewType = UITextView
     @Binding var text: String
+
+    func makeCoordinator() -> TextViewCoordinator {
+        return TextViewCoordinator(text: $text)
+    }
     
     func makeUIView(context: Context) -> UITextView {
-        return UITextView()
+        let view = UITextView()
+        view.delegate = context.coordinator
+        return view
     }
     
     func updateUIView(_ uiView: UITextView, context: Context) {
         uiView.text = text
     }    
+}
+
+class TextViewCoordinator: NSObject, UITextViewDelegate {
+    @Binding var text: String
+
+    init(text: Binding<String>) {
+        _text = text
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        text = textView.text
+    }
 }
