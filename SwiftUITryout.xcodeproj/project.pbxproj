@@ -23,6 +23,8 @@
 		D4A00A09249A75D50006881F /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A00A08249A75D50006881F /* UsersTableViewController.swift */; };
 		D4A00A0B249A91040006881F /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A00A0A249A91040006881F /* UserProfileView.swift */; };
 		D4A00A0D249AC1F80006881F /* GesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A00A0C249AC1F80006881F /* GesturesView.swift */; };
+		D4A00A0F249D08F30006881F /* BordersDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A00A0E249D08F30006881F /* BordersDemoView.swift */; };
+		D4A00A11249D48A70006881F /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A00A10249D48A70006881F /* GroupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		D4A00A08249A75D50006881F /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 		D4A00A0A249A91040006881F /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		D4A00A0C249AC1F80006881F /* GesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesView.swift; sourceTree = "<group>"; };
+		D4A00A0E249D08F30006881F /* BordersDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BordersDemoView.swift; sourceTree = "<group>"; };
+		D4A00A10249D48A70006881F /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 				D4A00A08249A75D50006881F /* UsersTableViewController.swift */,
 				D4A00A0A249A91040006881F /* UserProfileView.swift */,
 				D4A00A0C249AC1F80006881F /* GesturesView.swift */,
+				D4A00A0E249D08F30006881F /* BordersDemoView.swift */,
+				D4A00A10249D48A70006881F /* GroupView.swift */,
 			);
 			path = SwiftUITryout;
 			sourceTree = "<group>";
@@ -294,6 +300,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4A009D22497C0090006881F /* SwiftUITryout.xcdatamodeld in Sources */,
+				D4A00A0F249D08F30006881F /* BordersDemoView.swift in Sources */,
+				D4A00A11249D48A70006881F /* GroupView.swift in Sources */,
 				D4A009CD2497C0090006881F /* AppDelegate.swift in Sources */,
 				D4A00A09249A75D50006881F /* UsersTableViewController.swift in Sources */,
 				D4A00A03249A55240006881F /* TextViewExample.swift in Sources */,

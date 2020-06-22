@@ -13,10 +13,20 @@ struct UserProfileView: View {
     var body: some View {
         VStack {
             Text("SwiftUI:")
+                .font(.largeTitle)
+                .padding()
+                .overlay(
+                    RoundedRectangle(cornerRadius: 15)
+                    .stroke(lineWidth: 2)
+                )
+            Spacer()
+                .frame(height: 20)
             HStack {
                 Text(user.firstName)
                 Text(user.lastName)
             }
+                .padding()
+                .border(Color.orange)
         }
     }
 }

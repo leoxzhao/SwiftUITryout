@@ -8,6 +8,10 @@
 
 import SwiftUI
 
+class UserSettings: ObservableObject {
+    var preferredColor = Color.red
+}
+
 struct ContentView: View {
     @State var users: [User] = testData()
     
@@ -17,6 +21,8 @@ struct ContentView: View {
     // your view from accessing it.
     // It is safe to mutate state properties from any thread.
     @State private var currentUser: String? = "Leo"
+    @EnvironmentObject var settings: UserSettings
+    
     
     var body: some View {
         NavigationView {
@@ -34,6 +40,12 @@ struct ContentView: View {
                 }
                 NavigationLink(destination: TableViewController(users: self.$users)) {
                     Text("TableViewController")
+                }
+                NavigationLink(destination: BordersDemoView()) {
+                    Text("Borders")
+                }
+                NavigationLink(destination: GroupView()) {
+                    Text("Group").foregroundColor(self.settings.preferredColor)
                 }
                 List(users) { user in
                     UserCell(user: user, isActive: self.currentUser == user.firstName)
