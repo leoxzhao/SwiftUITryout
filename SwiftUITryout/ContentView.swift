@@ -29,6 +29,7 @@ struct ContentView: View {
             VStack {
                 Button(action: {
                     self.currentUser = "Leo\(Int.random(in: 0...10))"
+                    self.settings.preferredColor = Color.orange
                 }) {
                     Text("Hightlight")
                 }

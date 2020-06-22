@@ -21,20 +21,16 @@ struct MyViewModifier: ViewModifier {
 
 struct BordersDemoView: View {
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
             Text("Text Rectangle Border")
                 .font(.largeTitle)
                 .padding()
                 .border(Color.black)
-            Spacer()
-                .frame(height: 20)
             Text("Border + Radius")
                 .font(.largeTitle)
                 .padding()
                 .border(Color.red, width: 3)
                 .cornerRadius(15)
-            Spacer()
-                .frame(height: 20)
             Text("Overlay")
                 .font(.largeTitle)
                 .padding()
@@ -42,8 +38,6 @@ struct BordersDemoView: View {
                     RoundedRectangle(cornerRadius: 15)
                         .stroke(lineWidth: 2)
                 )
-            Spacer()
-                .frame(height: 20)
             Text("Dashed Border")
                 .font(.largeTitle)
                 .padding()
@@ -51,8 +45,6 @@ struct BordersDemoView: View {
                     RoundedRectangle(cornerRadius: 15)
                         .stroke(style: StrokeStyle(lineWidth: 4, dash: [15.0]))
                 )
-            Spacer()
-                .frame(height: 20)
             Image(systemName: "power")
                 .font(.system(size: 56.0))
                 .padding()
