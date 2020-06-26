@@ -48,6 +48,12 @@ struct ContentView: View {
                 NavigationLink(destination: GroupView()) {
                     Text("Group").foregroundColor(self.settings.preferredColor)
                 }
+                NavigationLink(destination: DrawingDemo()) {
+                    Text("Drawing")
+                }
+                NavigationLink(destination: HikeView(hike: hikeData[0])) {
+                    Text("Animation")
+                }
                 List(users) { user in
                     UserCell(user: user, isActive: self.currentUser == user.firstName)
                 }

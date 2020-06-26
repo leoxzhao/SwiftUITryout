@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		D416984924A1455200F0D0D7 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D416984824A1455200F0D0D7 /* GridView.swift */; };
+		D416984B24A246AB00F0D0D7 /* DrawingDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D416984A24A246AB00F0D0D7 /* DrawingDemo.swift */; };
+		D416984E24A246E500F0D0D7 /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D416984D24A246E500F0D0D7 /* HexagonParameters.swift */; };
+		D416985024A249E300F0D0D7 /* HikeGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = D416984F24A249E300F0D0D7 /* HikeGraph.swift */; };
+		D416985224A24A1100F0D0D7 /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D416985124A24A1100F0D0D7 /* HikeView.swift */; };
+		D416985524A24C3800F0D0D7 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = D416985424A24C3800F0D0D7 /* Hike.swift */; };
+		D416985724A24C9500F0D0D7 /* HikeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D416985624A24C9500F0D0D7 /* HikeDetail.swift */; };
+		D416985924A24CDA00F0D0D7 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D416985824A24CDA00F0D0D7 /* Data.swift */; };
+		D416985B24A24D2C00F0D0D7 /* GraphCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = D416985A24A24D2C00F0D0D7 /* GraphCapsule.swift */; };
+		D416985D24A24D4400F0D0D7 /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = D416985C24A24D4400F0D0D7 /* hikeData.json */; };
 		D4A009CD2497C0090006881F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A009CC2497C0090006881F /* AppDelegate.swift */; };
 		D4A009CF2497C0090006881F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A009CE2497C0090006881F /* SceneDelegate.swift */; };
 		D4A009D22497C0090006881F /* SwiftUITryout.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D4A009D02497C0090006881F /* SwiftUITryout.xcdatamodeld */; };
@@ -47,6 +56,15 @@
 
 /* Begin PBXFileReference section */
 		D416984824A1455200F0D0D7 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		D416984A24A246AB00F0D0D7 /* DrawingDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingDemo.swift; sourceTree = "<group>"; };
+		D416984D24A246E500F0D0D7 /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
+		D416984F24A249E300F0D0D7 /* HikeGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeGraph.swift; sourceTree = "<group>"; };
+		D416985124A24A1100F0D0D7 /* HikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
+		D416985424A24C3800F0D0D7 /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
+		D416985624A24C9500F0D0D7 /* HikeDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeDetail.swift; sourceTree = "<group>"; };
+		D416985824A24CDA00F0D0D7 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		D416985A24A24D2C00F0D0D7 /* GraphCapsule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphCapsule.swift; sourceTree = "<group>"; };
+		D416985C24A24D4400F0D0D7 /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
 		D4A009C92497C0090006881F /* SwiftUITryout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITryout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A009CC2497C0090006881F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4A009CE2497C0090006881F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +117,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D416984C24A246D200F0D0D7 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				D416984D24A246E500F0D0D7 /* HexagonParameters.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		D416985324A24C2A00F0D0D7 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				D416985C24A24D4400F0D0D7 /* hikeData.json */,
+				D416985A24A24D2C00F0D0D7 /* GraphCapsule.swift */,
+				D416985824A24CDA00F0D0D7 /* Data.swift */,
+				D416985624A24C9500F0D0D7 /* HikeDetail.swift */,
+				D416985424A24C3800F0D0D7 /* Hike.swift */,
+				D416984F24A249E300F0D0D7 /* HikeGraph.swift */,
+				D416985124A24A1100F0D0D7 /* HikeView.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
 		D4A009C02497C0090006881F = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +163,8 @@
 		D4A009CB2497C0090006881F /* SwiftUITryout */ = {
 			isa = PBXGroup;
 			children = (
+				D416985324A24C2A00F0D0D7 /* Animation */,
+				D416984C24A246D200F0D0D7 /* Drawing */,
 				D4A009CC2497C0090006881F /* AppDelegate.swift */,
 				D4A009CE2497C0090006881F /* SceneDelegate.swift */,
 				D4A009D32497C0090006881F /* ContentView.swift */,
@@ -141,6 +183,7 @@
 				D4A00A0E249D08F30006881F /* BordersDemoView.swift */,
 				D4A00A10249D48A70006881F /* GroupView.swift */,
 				D416984824A1455200F0D0D7 /* GridView.swift */,
+				D416984A24A246AB00F0D0D7 /* DrawingDemo.swift */,
 			);
 			path = SwiftUITryout;
 			sourceTree = "<group>";
@@ -275,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D416985D24A24D4400F0D0D7 /* hikeData.json in Resources */,
 				D4A009DC2497C00A0006881F /* LaunchScreen.storyboard in Resources */,
 				D4A009D92497C00A0006881F /* Preview Assets.xcassets in Resources */,
 				D4A009D62497C00A0006881F /* Assets.xcassets in Resources */,
@@ -302,20 +346,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D416984E24A246E500F0D0D7 /* HexagonParameters.swift in Sources */,
 				D4A009D22497C0090006881F /* SwiftUITryout.xcdatamodeld in Sources */,
 				D4A00A0F249D08F30006881F /* BordersDemoView.swift in Sources */,
+				D416985524A24C3800F0D0D7 /* Hike.swift in Sources */,
 				D4A00A11249D48A70006881F /* GroupView.swift in Sources */,
 				D4A009CD2497C0090006881F /* AppDelegate.swift in Sources */,
+				D416985B24A24D2C00F0D0D7 /* GraphCapsule.swift in Sources */,
 				D4A00A09249A75D50006881F /* UsersTableViewController.swift in Sources */,
+				D416985924A24CDA00F0D0D7 /* Data.swift in Sources */,
 				D4A00A03249A55240006881F /* TextViewExample.swift in Sources */,
 				D4A00A07249A75140006881F /* TableViewController.swift in Sources */,
 				D4A00A0B249A91040006881F /* UserProfileView.swift in Sources */,
 				D4A00A05249A60B30006881F /* TextView.swift in Sources */,
+				D416984B24A246AB00F0D0D7 /* DrawingDemo.swift in Sources */,
 				D4A009D42497C0090006881F /* ContentView.swift in Sources */,
 				D416984924A1455200F0D0D7 /* GridView.swift in Sources */,
+				D416985224A24A1100F0D0D7 /* HikeView.swift in Sources */,
 				D4A00A002497C3690006881F /* User.swift in Sources */,
 				D4A009CF2497C0090006881F /* SceneDelegate.swift in Sources */,
 				D4A00A0D249AC1F80006881F /* GesturesView.swift in Sources */,
+				D416985024A249E300F0D0D7 /* HikeGraph.swift in Sources */,
+				D416985724A24C9500F0D0D7 /* HikeDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
